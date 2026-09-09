@@ -1,0 +1,87 @@
+.wia-wrap { --wia-primary: #2271b1; --wia-danger: #d63638; --wia-success: #00a32a; --wia-bg: #f0f0f1; }
+.wia-wrap { background: #fff; padding: 0; border-radius: 8px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); overflow: hidden; max-width: 1200px; margin: 20px auto; display: flex; flex-direction: column; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; }
+.wia-header { background: #fff; padding: 20px 30px; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; align-items: center; }
+.wia-header h1 { margin: 0; font-size: 24px; color: #1d2327; display: flex; align-items: center; gap: 10px; }
+.wia-version { font-size: 12px; background: #e5e5e5; padding: 2px 8px; border-radius: 10px; color: #666; }
+.wia-subtitle { margin: 0; color: #646970; }
+.wia-main-layout { display: grid; grid-template-columns: 280px 1fr; min-height: 600px; }
+.wia-sidebar { background: #f6f7f7; border-right: 1px solid #ddd; padding: 20px; display: flex; flex-direction: column; gap: 20px; }
+.wia-nav button { display: block; width: 100%; text-align: left; padding: 12px 15px; margin-bottom: 5px; border: none; background: transparent; cursor: pointer; border-radius: 6px; font-weight: 500; color: #3c434a; transition: .2s; font-size: 14px; }
+.wia-nav button:hover { background: #e0e0e0; }
+.wia-nav button.active { background: var(--wia-primary); color: #fff; box-shadow: 0 2px 5px rgba(34, 113, 177, 0.3); }
+.wia-nav button .dashicons { margin-right: 8px; }
+.wia-info-box { background: #e6f6ff; border: 1px solid #bce0fd; padding: 15px; border-radius: 6px; font-size: 13px; color: #003c66; }
+.wia-info-box h4 { margin: 0 0 5px 0; font-weight: 700; }
+.wia-content { padding: 30px; background: #fff; }
+.wia-controls { margin-bottom: 20px; }
+#wia-search { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
+.wia-list { list-style: none; margin: 0; padding: 0; max-height: 500px; overflow-y: auto; }
+.wia-list li { display: flex; justify-content: space-between; align-items: center; padding: 12px; border-bottom: 1px solid #f0f0f1; transition: .2s; }
+.wia-list li:hover { background: #fcfcfc; }
+.wia-list-info { display: flex; flex-direction: column; }
+.wia-link-ext { font-size: 11px; text-decoration: none; color: #2271b1; }
+.wia-results-area { margin-top: 30px; border-top: 2px solid #f0f0f1; padding-top: 20px; }
+.wia-results-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+.wia-img-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 20px; }
+.wia-card-img { border: 1px solid #ddd; border-radius: 8px; overflow: hidden; background: #fff; transition: .3s; position: relative; }
+.wia-card-img:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+.wia-badge { position: absolute; top: 10px; right: 10px; padding: 4px 8px; border-radius: 4px; font-size: 11px; font-weight: bold; color: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.2); }
+.wia-badge.bad { background: var(--wia-danger); }
+.wia-badge.good { background: var(--wia-success); }
+.wia-badge.unknown { background: #646970; }
+.wia-thumb-box { height: 140px; display: flex; align-items: center; justify-content: center; background: #eee; overflow: hidden; }
+.wia-thumb-box img { max-width: 100%; max-height: 100%; object-fit: contain; }
+.wia-meta-box { padding: 12px; font-size: 13px; text-align: center; }
+.wia-size { font-size: 16px; font-weight: 700; display: block; margin-bottom: 4px; }
+.wia-dim { color: #888; font-size: 11px; }
+.wia-placeholder { text-align: center; padding: 50px; color: #ccc; }
+.wia-wrap [hidden] { display: none !important; }
+.wia-content { min-width: 0; }
+.wia-row-actions, #wia-pagination { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+#wia-pagination { margin: 16px 0; }
+.wia-list-info { padding-right: 12px; }
+.wia-info-box h2 { font-size: 15px; color: inherit; }
+.wia-wrap button:focus-visible, .wia-wrap a:focus-visible { outline: 2px solid #135e96; outline-offset: 3px; }
+.wia-compress-status { overflow-wrap: anywhere; }
+.wia-placeholder { color: #50575e; }
+.wia-wrap .wia-dim { color: #50575e; }
+.wia-placeholder .dashicons { font-size: 60px; width: 60px; height: 60px; margin-bottom: 10px; }
+.wia-loader { text-align: center; padding: 40px; color: var(--wia-primary); font-weight: 600; }
+.wia-card { background: #fff; border: 1px solid #e5e5e5; padding: 25px; border-radius: 8px; max-width: 500px; }
+.wia-input-group { display: flex; align-items: center; gap: 10px; margin-top: 10px; }
+#wia-limit { padding: 8px; font-size: 16px; width: 100px; }
+@media screen and (max-width: 782px) {
+	.wia-main-layout { grid-template-columns: 1fr; }
+	.wia-header { flex-wrap: wrap; gap: 15px; padding: 20px; }
+	.wia-sidebar { border-right: 0; border-bottom: 1px solid #ddd; }
+	.wia-content { padding: 20px; min-width: 0; }
+	.wia-list li, .wia-results-header { flex-wrap: wrap; gap: 10px; }
+}
+@media print {
+	body * { visibility: hidden; }
+	#adminmenumain, #wpadminbar, #wpfooter { display: none !important; }
+	.wia-wrap, .wia-wrap * { visibility: visible; }
+	.wia-wrap {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		max-width: 100%;
+		margin: 0;
+		box-shadow: none;
+		border: none;
+	}
+	.wia-main-layout { display: block; min-height: 0; }
+	.wia-sidebar, #wia-browser, #wia-config, #wia-print, .wia-compress { display: none !important; }
+	.wia-wrap { position: static; overflow: visible; }
+	#wpcontent, #wpbody-content { margin: 0 !important; padding: 0 !important; }
+	.wia-img-grid { display: block; }
+	.wia-card-img { display: inline-block; width: 30%; margin: 0 1% 14px; vertical-align: top; break-inside: avoid; page-break-inside: avoid; }
+	.wia-results-area { border: 0; margin: 0; }
+	.wia-content { padding: 10px; }
+	.wia-btn-audit, .wia-controls, .wia-header-actions button, #wia-save-config { display: none !important; }
+	* { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .wia-wrap * { transition: none !important; }
+}
